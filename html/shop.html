@@ -28,6 +28,87 @@
 
   <main class="main-content">
 
+    <h1 class="page-title">Shop &amp; Create</h1>
+
+    <div class="card-grid">
+
+      <!-- Item 1: Hoodie Carousel -->
+      <div>
+        <div class="placeholder-box-shop carousel">
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+          <div class="carousel-track">
+            <img src="assets/images/hoodie1-front.jpg" alt="Hoodie Front" class="active">
+            <img src="assets/images/hoodie1-back.jpg" alt="Hoodie Back">
+            <img src="assets/images/hoodie1-detail.jpg" alt="Hoodie Detail">
+          </div>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <p class="card-label">Big Sister Hoodie 1</p>
+      </div>
+
+      <!-- Item 2: Hoodie Carousel -->
+      <div>
+        <div class="placeholder-box-shop carousel">
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+          <div class="carousel-track">
+            <img src="assets/images/shirt1-front.jpg" alt="Shirt Front" class="active">
+            <img src="assets/images/shirt1-back.jpg" alt="Shirt Back">
+            <img src="assets/images/shirt1-detail.jpg" alt="Shirt Detail">
+          </div>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <p class="card-label">Big Sister Hoodie 2</p>
+      </div>
+
+      <!-- Item 3: Customisation Station (Pink Feature Box) -->
+      <div class="customization-station-wrapper">
+        <h2 class="station-heading">Customisation Station</h2>
+        
+        <div class="station-card">
+          <div id="model-container">
+            <div id="ui-container">
+              <div class="ui-group">
+                <label for="colorPicker">Color</label>
+                <input type="color" id="colorPicker" value="#ffffff">
+              </div>
+              <div class="ui-group">
+                <label for="textInput">Text</label>
+                <input type="text" id="textInput" value="Little Sister">
+              </div>
+              <div class="ui-group">
+                <label for="fontSelect">Font</label>
+                <select id="fontSelect">
+                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_regular.typeface.json">Helvetiker</option>
+                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_bold.typeface.json">Helvetiker Bold</option>
+                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/optimer_regular.typeface.json">Optimer</option>
+                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/gentilis_regular.typeface.json">Gentilis</option>
+                </select>
+              </div>
+              <button id="musicToggle">Play Music</button>
+            </div>
+          </div>
+        </div>
+        <p class="station-description">
+          Have fun customizing your own 3D Little Sister model! Choose colors, fonts, and text to make it your own.
+        </p>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- <main class="main-content">
+
     <h1 class="page-title">Shop</h1>
 
     <div class="card-grid">
@@ -71,14 +152,14 @@
           </div>
         </div>
         <p class="card-label">Hoodie 2</p>
-      </div>
+      </div> -->
       
       <!-- 3D interactive viewer -->
-      <div>
-        <div id="model-container">
+      <!-- <div>
+        <div id="model-container"> -->
 
           <!-- Controls pinned to bottom inside the viewer -->
-          <div id="ui-container">
+          <!-- <div id="ui-container">
             <div class="ui-group">
               <label for="colorPicker">Color</label>
               <input type="color" id="colorPicker" value="#ffffff">
@@ -107,7 +188,7 @@
 
     </div>
 
-  </main>
+  </main> -->
 
   <script type="importmap">
     {

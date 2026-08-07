@@ -105,21 +105,48 @@
     <h1 class="page-title">Shop</h1>
 
     <div class="card-grid">
-
       <div>
-        <div class="placeholder-box-shop">
-          <span class="placeholder-label">Image</span>
+        <div class="placeholder-box-shop carousel">
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+    
+          <div class="carousel-track">
+            <img src="images/hoodie1-front.jpg" alt="Hoodie 1 Front" class="active">
+            <img src="images/hoodie1-back.jpg" alt="Hoodie 1 Back">
+            <img src="images/hoodie1-detail.jpg" alt="Hoodie 1 Detail">
+          </div>
+    
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
+
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
-        <p class="card-label">Hoodie</p>
+        <p class="card-label">Hoodie 1</p>
       </div>
 
       <div>
-        <div class="placeholder-box-shop">
-          <span class="placeholder-label">Image</span>
-        </div>
-        <p class="card-label">T-Shirt</p>
-      </div>
+        <div class="placeholder-box-shop carousel">
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
+    
+          <div class="carousel-track">
+            <img src="images/hoodie1-front.jpg" alt="Hoodie 2 Front" class="active">
+            <img src="images/hoodie1-back.jpg" alt="Hoodie 2 Back">
+            <img src="images/hoodie1-detail.jpg" alt="Hoodie 2 Detail">
+          </div>
+    
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
 
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <p class="card-label">Hoodie 2</p>
+      </div>
+      
       <!-- 3D interactive viewer -->
       <div>
         <div id="model-container">
@@ -157,6 +184,37 @@
   </main>
 
   <script type="module" src="/main.js"></script>
+
+  <script>
+  function moveSlide(button, direction) {
+    // Find the parent carousel container
+    const carousel = button.closest('.carousel');
+    
+    // Select all images and dots within this specific carousel
+    const images = carousel.querySelectorAll('.carousel-track img');
+    const dots = carousel.querySelectorAll('.dot');
+    
+    // Find index of currently visible image
+    let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    
+    // Remove active class from current image and dot
+    images[activeIndex].classList.remove('active');
+    if (dots.length) {
+      dots[activeIndex].classList.remove('active');
+    }
+    
+    // Calculate new slide index with looping
+    let newIndex = activeIndex + direction;
+    if (newIndex >= images.length) newIndex = 0;
+    if (newIndex < 0) newIndex = images.length - 1;
+    
+    // Activate new image and dot
+    images[newIndex].classList.add('active');
+    if (dots.length) {
+      dots[newIndex].classList.add('active');
+    }
+  }
+</script>
 
 </body>
 </html>

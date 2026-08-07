@@ -53,7 +53,7 @@ const loader = new OBJLoader();
 let loadedModel;
 
 loader.load(
-  '/3d_model.obj',
+  '/assets/model/3d_model.obj',
   (object) => {
     loadedModel = object;
     object.scale.set(1, 1, 1);

@@ -81,6 +81,73 @@
 </head>
 <body>
 
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-script">the big</span>
+      <span class="logo-main">SISTER</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="magazines.html">Magazines</a>
+      <a href="news-resources.html">News &amp; Resources</a>
+      <a href="shop.html" class="active">Shop</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <div class="card-grid">
+
+      <div>
+        <div class="placeholder-box-shop">
+          <span class="placeholder-label">Image</span>
+        </div>
+        <p class="card-label">Hoodie</p>
+      </div>
+
+      <div>
+        <div class="placeholder-box-shop">
+          <span class="placeholder-label">Image</span>
+        </div>
+        <p class="card-label">T-Shirt</p>
+      </div>
+
+      <!-- 3D interactive viewer -->
+      <div>
+        <div id="model-container">
+
+          <!-- Controls pinned to bottom inside the viewer -->
+          <div id="ui-container">
+            <div class="ui-group">
+              <label for="colorPicker">Color</label>
+              <input type="color" id="colorPicker" value="#ffffff">
+            </div>
+            <div class="ui-group">
+              <label for="textInput">Text</label>
+              <input type="text" id="textInput" value="My Product">
+            </div>
+            <div class="ui-group">
+              <label for="fontSelect">Font</label>
+              <select id="fontSelect">
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_regular.typeface.json">Helvetiker</option>
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_bold.typeface.json">Helvetiker Bold</option>
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/optimer_regular.typeface.json">Optimer</option>
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/gentilis_regular.typeface.json">Gentilis</option>
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/droid/droid_sans_regular.typeface.json">Droid Sans</option>
+                <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/droid/droid_serif_regular.typeface.json">Droid Serif</option>
+              </select>
+            </div>
+            <button id="musicToggle">Play Music</button>
+          </div>
+
+        </div>
+        <p class="card-label">Customise Your Little Sister</p>
+      </div>
+
+    </div>
+
+  </main>
 
   <!-- Import the component -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>

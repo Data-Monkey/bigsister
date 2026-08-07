@@ -1,8 +1,67 @@
-<html>
-  <head>
-    <title>The Big Sister Club</title>
-  </head>
-  <body>
-    <center><h1>The Big Sister Club</h1></center>
-  </body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Big Sister</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/xfn8kna.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html"><span class="logo-script">the big</span></a>
+      <a href="index.html"><span class="logo-main">SISTER</span></a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="magazines.html">Magazines</a>
+      <a href="news-resources.html">News & Resources</a>
+      <a href="shop.html">Shop</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+	
+  <video id="intro-video" autoplay muted playsinline>
+    <source src="assets/images/LogoAnimation.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    const video = document.getElementById('intro-video');
+    video.addEventListener('ended', function () {
+      video.pause();
+    });
+  </script>
+    
+	<div class="card-grid">
+
+      <a href="magazines.html" style="display:block;">
+        <div class="placeholder-box">
+          <span class="placeholder-label">Image</span>
+        </div>
+        <p class="card-label">Magazines</p>
+      </a>
+
+      <a href="news-resources.html" style="display:block;">
+        <div class="placeholder-box">
+          <span class="placeholder-label">Image</span>
+        </div>
+        <p class="card-label">News And Resources</p>
+      </a>
+
+      <a href="shop.html" style="display:block;">
+        <div class="placeholder-box">
+          <span class="placeholder-label">Image</span>
+        </div>
+        <p class="card-label">Shop</p>
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
 </html>

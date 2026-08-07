@@ -1,0 +1,531 @@
+/*The Big Sister — Styles*/
+
+:root {
+    --cream: #fdf0d5;
+    --pink: #ffd9e0;
+    --pink-text: #f48fb1;
+    --blue: #5aa9d6;
+    --blue-light: #e0f7fb;
+    --ink: #1a1a1a;
+    --white: #ffffff;
+	
+	
+    --font-serif: 'Poppins', Arial, serif;
+    --font-sans: 'Poppins', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--ink);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header + Nav */
+
+.site-header {
+    background-color: var(--cream);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.logo .logo-script {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--blue);
+  letter-spacing: -1px
+}
+
+.logo .logo-main {
+  font-family: 'Didot', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 1px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    background-color: var(--white);
+    color: var(--ink);
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/* Main Content */
+
+.main-content {
+    padding: 3rem 2.5rem 4rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    color: var(--pink-text);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+	margin-top: -1rem;
+    text-transform: uppercase;
+}
+
+.page-intro {
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-top: -0.5rem;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Intro Video */
+
+#intro-video {
+  width: 100%;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+/* Image Placeholder Boxes */
+
+.placeholder-box {
+    background-color: var(--blue-light);
+    width: 100%;
+    aspect-ratio: 2 / 2.8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Keeps image edges neat on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.placeholder-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.placeholder-box .placeholder-label {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: #9bc6db;
+}
+
+.placeholder-box.landscape {
+    aspect-ratio: 4 / 3;
+}
+
+.placeholder-box-mag {
+    position: relative;
+    background-color: var(--blue-light);
+    width: 100%;
+    aspect-ratio: 2 / 2.8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Keeps image edges neat on hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.placeholder-box-mag img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Badge overlay styling */
+.badge-new {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 55px;
+    height: 55px;
+    background-color: #f8d470;
+    color: var(--blue);
+    font-family: var(--font-serif);
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Hover effect for placeholder boxes */
+.placeholder-box-mag:hover,
+.placeholder-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Image Placeholder Boxes For Shop*/
+
+.placeholder-box-shop {
+    background-color: var(--blue-light);
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-box-shop img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.placeholder-box-shop .placeholder-label {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: #9bc6db;
+}
+
+.placeholder-box-shop.landscape {
+    aspect-ratio: 4 / 3;
+}
+
+/* Card Grid */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+}
+
+.card-label {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Section Headings */
+.section-heading {
+    font-family: var(--font-serif);
+    color: var(--pink-text);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* About Page */
+
+.about-block {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.about-block .placeholder-box {
+    width: 280px;
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+}
+
+.about-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Quote Color Block - About */
+.quote-block {
+    background-color: var(--pink);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.quote-block blockquote {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    color: var(--ink);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* Our Values Cards - About */
+.values-section {
+    margin: 3.5rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.value-card {
+    background-color: var(--blue-light);
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: transform 0.2s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+}
+
+.value-card h3 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--ink);
+}
+
+/* Creator Space Adjustment - About */
+.creator-section {
+    margin-top: 3.5rem;
+}
+
+.creator-text {
+    flex: 1;
+}
+
+/* News & Resources Page */
+
+.news-row {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.news-row.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.news-row .placeholder-box {
+    width: 380px;
+    flex-shrink: 0;
+    aspect-ratio: 4 / 3;
+}
+
+.news-row p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.news-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*text-align: left;*/
+    gap: 1rem;
+}
+
+.news-content h2 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+}
+
+.resource-links.reverse {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0;
+}
+
+.resource-btn {
+    display: inline-block;
+    background-color: var(--pink);
+    color: var(--ink);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.resource-btn:hover {
+    background-color: var(--pink-text);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Shop */
+
+.placeholder-box-shop {
+    background-color: var(--blue-light);
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Anchor for absolute arrows & dots */
+    overflow: hidden;  /* Keeps sliding/fading images neatly inside */
+}
+
+
+/* Inner Carousel Styling */
+.carousel-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-track img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-track img.active {
+    opacity: 1;
+}
+
+/* Side Navigation Arrows */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--ink);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-btn:hover {
+    background-color: var(--pink);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Carousel Dot Indicators */
+.carousel-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 5;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.dot.active {
+    background-color: var(--pink-text);
+    transform: scale(1.25);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-block,
+    .news-row,
+    .news-row.reverse {
+        flex-direction: column;
+    }
+
+    .about-block .placeholder-box,
+    .news-row .placeholder-box {
+        width: 100%;
+    }
+}

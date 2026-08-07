@@ -26,6 +26,12 @@ body {
     background-color: var(--white);
 }
 
+h2 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -120,7 +126,7 @@ img {
     font-size: 1.15rem;
     color: var(--ink);
     margin-top: -0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     max-width: 700px;
     line-height: 1.6;
 }
@@ -420,6 +426,23 @@ img {
 /* Shop */
 /* Shop Section Styles */
 
+/* Align shop grid items naturally without forcing shifts */
+.card-grid.shop-grid {
+    align-items: start;
+}
+
+/* Customisation Station Container */
+.customization-station-wrapper {
+    background-color: var(--pink);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
 .placeholder-box-shop {
     background-color: var(--blue-light);
     width: 100%;
@@ -444,22 +467,9 @@ img {
     color: #9bc6db;
 }
 
-/* Customisation Station Outer Feature Box */
-.customization-station-wrapper {
-    background-color: var(--pink);
-    border-radius: 12px;
-    padding: 1rem 1rem 1rem; /* Tightened padding around all edges */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem; /* Compact gap between header, card, and description */
-    margin-top: -3.8rem; /* Pulls top edge up to line up perfectly with top of hoodie boxes */
-    height: fit-content; /* Stops the grid from forcing extra vertical stretch at the bottom */
-}
-
 .station-heading {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--pink-text);
     text-align: center;
 }

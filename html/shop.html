@@ -30,16 +30,16 @@
 
     <h1 class="page-title">Shop &amp; Create</h1>
 
-    <div class="card-grid">
+    <div class="card-grid shop-grid">
 
-      <!-- Item 1: Hoodie Carousel -->
-      <div>
+      <!-- Column 1 -->
+      <div class="shop-item">
         <div class="placeholder-box-shop carousel">
           <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
           <div class="carousel-track">
-            <img src="assets/images/hoodie1-front.jpg" alt="Hoodie Front" class="active">
-            <img src="assets/images/hoodie1-back.jpg" alt="Hoodie Back">
-            <img src="assets/images/hoodie1-detail.jpg" alt="Hoodie Detail">
+            <img src="assets/images/pink.png" alt="Hoodie Front" class="active">
+            <img src="assets/images/pinkon.jpg" alt="Hoodie Try On">
+            <img src="assets/images/pinkdetail.png" alt="Hoodie Detail">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
           <div class="carousel-dots">
@@ -51,14 +51,14 @@
         <p class="card-label">Big Sister Hoodie 1</p>
       </div>
 
-      <!-- Item 2: Hoodie Carousel -->
-      <div>
+      <!-- Column 2 -->
+      <div class="shop-item">
         <div class="placeholder-box-shop carousel">
           <button class="carousel-btn prev" onclick="moveSlide(this, -1)">&#10094;</button>
           <div class="carousel-track">
-            <img src="assets/images/shirt1-front.jpg" alt="Shirt Front" class="active">
-            <img src="assets/images/shirt1-back.jpg" alt="Shirt Back">
-            <img src="assets/images/shirt1-detail.jpg" alt="Shirt Detail">
+            <img src="assets/images/blue.png" alt="Hoodie Front" class="active">
+            <img src="assets/images/blueon.jpg" alt="Hoodie Try On">
+            <img src="assets/images/bluedetail.png" alt="Hoodie Detail">
           </div>
           <button class="carousel-btn next" onclick="moveSlide(this, 1)">&#10095;</button>
           <div class="carousel-dots">
@@ -70,39 +70,39 @@
         <p class="card-label">Big Sister Hoodie 2</p>
       </div>
 
-      <!-- Item 3: Customisation Station (Pink Feature Box) -->
-      <div class="customization-station-wrapper">
-        <h2 class="station-heading">Customisation Station</h2>
-        
-        <div class="station-card">
-          <div id="model-container">
-            <div id="ui-container">
-              <div class="ui-group">
-                <label for="colorPicker">Color</label>
-                <input type="color" id="colorPicker" value="#ffffff">
+      <!-- Column 3 -->
+      <div class="shop-item">
+        <div class="customization-station-wrapper">
+          <h2 class="station-heading">Customisation Station</h2>
+          <div class="station-card">
+            <div id="model-container">
+              <div id="ui-container">
+                <div class="ui-group">
+                  <label for="colorPicker">Color</label>
+                  <input type="color" id="colorPicker" value="#ffffff">
+                </div>
+                <div class="ui-group">
+                  <label for="textInput">Text</label>
+                  <input type="text" id="textInput" value="Little Sister">
+                </div>
+                <div class="ui-group">
+                  <label for="fontSelect">Font</label>
+                  <select id="fontSelect">
+                    <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_regular.typeface.json">Helvetiker</option>
+                    <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_bold.typeface.json">Helvetiker Bold</option>
+                    <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/optimer_regular.typeface.json">Optimer</option>
+                    <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/gentilis_regular.typeface.json">Gentilis</option>
+                  </select>
+                </div>
               </div>
-              <div class="ui-group">
-                <label for="textInput">Text</label>
-                <input type="text" id="textInput" value="Little Sister">
-              </div>
-              <div class="ui-group">
-                <label for="fontSelect">Font</label>
-                <select id="fontSelect">
-                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_regular.typeface.json">Helvetiker</option>
-                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/helvetiker_bold.typeface.json">Helvetiker Bold</option>
-                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/optimer_regular.typeface.json">Optimer</option>
-                  <option value="https://cdn.jsdelivr.net/npm/three/examples/fonts/gentilis_regular.typeface.json">Gentilis</option>
-                </select>
-              </div>
-              <button id="musicToggle">Play Music</button>
             </div>
           </div>
+          <p class="station-description">
+            Have fun customizing your own 3D Little Sister!
+          </p>
         </div>
-        <p class="station-description">
-          Have fun customizing your own 3D Little Sister model! Choose colors, fonts, and text to make it your own.
-        </p>
       </div>
-      
+
     </div>
 
   </main>
@@ -115,9 +115,9 @@
     }
   </script>
 
-  <script type="module" src="/assets/model.js"></script>
+  <script type="module" src="assets/model.js"></script>
 
-  <script src="/assets/carousel.js"></script>
+  <script src="assets/carousel.js"></script>
 
 </body>
 </html>

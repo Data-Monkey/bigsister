@@ -10,7 +10,8 @@
   
 </head>
 <body>
-
+  <script type="text/javascript" src="assets/includeHTML.js"></script>
+  
   <header class="site-header">
     <div class="logo">
       <a href="index.html"><span class="logo-script">the big</span></a>
@@ -84,18 +85,9 @@
 
   </main>
 
-  <footer class="site-footer">
-    <div style="margin-right: auto;">
-      &copy; 2026 The Big Sister
-    </div>
-    <div style="font-size: 15px;">
-      <a href="https://www.facebook.com/thebigsister.26" class="fa-brands fa-facebook" style="font-size: 20px; color: var(--blue);"></a> find us @thebigsister.26
-      <a href="https://www.instagram.com/thebigsister.26" class="fa-brands fa-instagram" style="font-size: 20px; color: var(--blue);"></a>
-    </div>
-    <div class="disclaimer">
-      This is a High School project for <br> Industrial Multimedia: Major Work 2026. <br> Don't consider this professional help.
-    </div>
-  </footer>
+  <!-- run the script to include the footer HTML content -->
+  <div w3-include-html="footer.html"></div>
+  <script> includeHTML(); </script>
 
 </body>
 </html>

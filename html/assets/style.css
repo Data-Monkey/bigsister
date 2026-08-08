@@ -9,7 +9,6 @@
     --ink: #1a1a1a;
     --white: #ffffff;
 	
-	
     --font-serif: 'Poppins', Arial, serif;
     --font-sans: 'Poppins', Arial, sans-serif;
 }
@@ -58,24 +57,40 @@ img {
     gap: 1rem;
 }
 
+
+/* Footer  */
 .site-footer {
-    background-color: var(--pink);
-    padding: 1rem 1rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+
+    background-color: var(--pink);
+    padding: 1rem 1rem;
+    align-items: center;
     gap: 1rem;
 }
 
+.footer-left {
+    margin-right: auto;
+    width: 33%;
+}
+
+.footer-center {
+    text-align: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    width: 33%;
+    font-size: 15px;
+}
+
 .disclaimer {
+    margin-left: auto;
+    width: 33%;
     font-family: var(--font-serif);
     color: var(--ink);
     opacity: 60%;
     font-size: 0.8rem;
     text-align: right;
     line-height: 1rem;
-    margin-left: auto;
 }
 
 .logo {

@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News &amp; Resources — The Big Sister</title>
+  <title>Resources — The Big Sister</title>
   <link rel="stylesheet" href="https://use.typekit.net/xfn8kna.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
 </head>
 <body>
-
+  <script type="text/javascript" src="assets/includeHTML.js"></script>
+  
   <header class="site-header">
     <div class="logo">
       <a href="index.html"><span class="logo-script">the big</span></a>
@@ -18,14 +21,14 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="magazines.html">Magazines</a>
-      <a href="news-resources.html" class="active">News &amp; Resources</a>
+      <a href="resources.html" class="active">Resources</a>
       <a href="shop.html">Shop</a>
     </nav>
   </header>
 
   <main class="main-content">
 
-    <h1 class="page-title">Trusted News &amp; Resources</h1>
+    <h1 class="page-title">Trusted Resources</h1>
     <p class="page-intro">
       A curated collection of reliable, expert-backed guidance to support your wellbeing, body and relationships.
     </p>
@@ -50,7 +53,7 @@
     <!-- Period & Body Health Resource -->
     <div class="news-row reverse">
       <div class="placeholder-box landscape">
-        <span class="placeholder-label">Period &amp; Body Facts</span>
+        <img src="assets/images/body.jpg" alt="Body Health">
       </div>
       <div class="news-content">
         <h2>Understanding Your Body &amp; Menstrual Cycle</h2>
@@ -66,7 +69,7 @@
     <!-- Relationships & Peer Advice -->
     <div class="news-row">
       <div class="placeholder-box landscape">
-        <span class="placeholder-label">Relationships &amp; Safety</span>
+        <img src="assets/images/onlinesafety.png" alt="Relationships &amp; Safety">
       </div>
       <div class="news-content">
         <h2>Friendships, Boundaries &amp; Staying Safe Online</h2>
@@ -75,11 +78,16 @@
         </p>
         <div class="resource-links">
           <a href="https://au.reachout.com" target="_blank" rel="noopener" class="resource-btn">ReachOut Friendship &amp; Life Guides</a>
+          <a href="https://www.esafety.gov.au/young-people" target="_blank" rel="noopener" class="resource-btn">eSafety Commissioner - Young People</a>
         </div>
       </div>
     </div>
 
   </main>
+
+  <!-- run the script to include the footer HTML content -->
+  <div w3-include-html="footer.html"></div>
+  <script> includeHTML(); </script>
 
 </body>
 </html>

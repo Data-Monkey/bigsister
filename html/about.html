@@ -6,8 +6,10 @@
   <title>About Us — The Big Sister</title>
   <link rel="stylesheet" href="https://use.typekit.net/xfn8kna.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
+  <script type="text/javascript" src="assets/includeHTML.js"></script>
 
   <header class="site-header">
     <div class="logo">
@@ -18,18 +20,18 @@
       <a href="index.html">Home</a>
       <a href="about.html" class="active">About</a>
       <a href="magazines.html">Magazines</a>
-      <a href="news-resources.html">News &amp; Resources</a>
+      <a href="resources.html">Resources</a>
       <a href="shop.html">Shop</a>
     </nav>
   </header>
 
   <main class="main-content">
 
-    <h1 class="page-title">About Us</h1>
+    <h1 class="page-title">About Me</h1>
 
     <div class="about-block">
       <div class="placeholder-box">
-        <span class="placeholder-label">Image</span>
+        <img src="assets/images/about.png" alt="About">
       </div>
       <p>
         The purpose of The Big Sister is to fill an emotional and
@@ -52,7 +54,7 @@
 
   <!-- Our Values Grid -->
   <section class="values-section">
-    <h2 class="section-heading">Our Values</h2>
+    <h2 class="section-heading">Sister Values</h2>
     <div class="values-grid">
       <div class="value-card">
         <h3>Kindness</h3>
@@ -76,7 +78,7 @@
   <!-- Why I Created It (Personal Space) -->
   <section class="about-block creator-section">
     <div class="placeholder-box">
-      <img src="assets/images/AboutMe.jpg" alt="Creator">
+      <img src="assets/images/me.jpeg" alt="Creator">
     </div>
     <div class="creator-text">
       <h2 class="section-heading">Why I Created It</h2>
@@ -87,6 +89,10 @@
   </section>
 
   </main>
+
+  <!-- run the script to include the footer HTML content -->
+  <div w3-include-html="footer.html"></div>
+  <script> includeHTML(); </script>
 
 </body>
 </html>

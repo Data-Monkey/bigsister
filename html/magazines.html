@@ -6,8 +6,10 @@
   <title>Magazines — The Big Sister</title>
   <link rel="stylesheet" href="https://use.typekit.net/xfn8kna.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />  
 </head>
 <body>
+  <script type="text/javascript" src="assets/includeHTML.js"></script>
 
   <header class="site-header">
     <div class="logo">
@@ -18,7 +20,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="magazines.html" class="active">Magazines</a>
-      <a href="news-resources.html">News &amp; Resources</a>
+      <a href="resources.html">Resources</a>
       <a href="shop.html">Shop</a>
     </nav>
   </header>
@@ -26,6 +28,9 @@
   <main class="main-content">
 
     <h1 class="page-title">Magazine Editions</h1>
+    <p class="page-intro">
+      Discover our latest issues! New releases every 4 months!
+    </p>
 
     <div class="card-grid">
 
@@ -34,26 +39,34 @@
           <span class="badge-new">NEW!</span>
           <img src="assets/images/SelfCare.jpg" alt="Self Care Magazine">
         </div>
-        <p class="card-label">Self Care</p>
+        <h2 class="card-label">Self Care</h2>
+        <p>Time for a bubble bath! This edition explores everything you need to know about self care, including: mental awareness, body image, positive mindsets, hygiene and sleep.</p>
       </div>
 
       <div>
         <div class="placeholder-box-mag">
           <img src="assets/images/Periods.png" alt="Periods Magazine">
         </div>
-        <p class="card-label">Periods</p>
+        <h2 class="card-label">Periods</h2>
+        <p>Periods! The monthly event that every girl lives with. This edition goes through all the things you need to know about how look after yourself and tips that our girls have learnt.</p>
       </div>
 
       <div>
         <div class="placeholder-box-mag">
           <img src="assets/images/Friendship.png" alt="Friendship Magazine">
         </div>
-        <p class="card-label">Friendship</p>
+        <h2 class="card-label">Friendship</h2>
+        <p>Sometimes relationships can be hard! Let's go through some steps to make sure you can build strong and healthy frienships. Join me in this edition!</p>
       </div>
 
     </div>
 
   </main>
 
+  <!-- run the script to include the footer HTML content -->
+  <div w3-include-html="footer.html"></div>
+  <script> includeHTML(); </script>
+
 </body>
 </html>
+

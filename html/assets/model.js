@@ -53,7 +53,7 @@ const loader = new OBJLoader();
 let loadedModel;
 
 loader.load(
-  '/assets/model/3d_model.obj',
+  'assets/model/3d_model.obj',
   (object) => {
     loadedModel = object;
     object.scale.set(1, 1, 1);
@@ -159,26 +159,7 @@ document.getElementById('fontSelect').addEventListener('change', (event) => {
   });
 });
 
-// 9. Music (commented out until you have an audio file)
-// To enable: add your music file to public/ folder and uncomment these lines
-
- const bgMusic = new Audio('/assets/model/music.mp3');
- bgMusic.loop = true;
- bgMusic.volume = 0.5;
- let isMusicPlaying = false;
- const musicToggleBtn = document.getElementById('musicToggle');
- musicToggleBtn.addEventListener('click', () => {
-   if (isMusicPlaying) {
-     bgMusic.pause();
-     musicToggleBtn.innerText = 'Play Music';
-   } else {
-     bgMusic.play();
-     musicToggleBtn.innerText = 'Pause Music';
-   }
-   isMusicPlaying = !isMusicPlaying;
- });
-
-// 10. Animation loop
+// 9. Animation loop
 function animate() {
   requestAnimationFrame(animate);
   controls.update();
@@ -186,7 +167,7 @@ function animate() {
 }
 animate();
 
-// 11. Resize handler
+// 10. Resize handler
 window.addEventListener('resize', () => {
   camera.aspect = container.clientWidth / container.clientHeight;
   camera.updateProjectionMatrix();

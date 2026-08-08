@@ -9,7 +9,6 @@
     --ink: #1a1a1a;
     --white: #ffffff;
 	
-	
     --font-serif: 'Poppins', Arial, serif;
     --font-sans: 'Poppins', Arial, sans-serif;
 }
@@ -24,6 +23,12 @@ body {
     font-family: var(--font-sans);
     color: var(--ink);
     background-color: var(--white);
+}
+
+h2 {
+    font-family: var(--font-serif);
+    color: var(--blue);
+    font-size: 1.5rem;
 }
 
 a {
@@ -52,6 +57,42 @@ img {
     gap: 1rem;
 }
 
+
+/* Footer  */
+.site-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    background-color: var(--pink);
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-left {
+    margin-right: auto;
+    width: 33%;
+}
+
+.footer-center {
+    text-align: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    width: 33%;
+    font-size: 15px;
+}
+
+.disclaimer {
+    margin-left: auto;
+    width: 33%;
+    font-family: var(--font-serif);
+    color: var(--ink);
+    opacity: 60%;
+    font-size: 0.8rem;
+    text-align: right;
+    line-height: 1rem;
+}
+
 .logo {
     display: flex;
     align-items: baseline;
@@ -70,9 +111,9 @@ img {
 .logo .logo-main {
   font-family: 'Didot', serif;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--ink);
-  letter-spacing: 1px;
+  letter-spacing: -2px;
 }
 
 .main-nav {
@@ -120,7 +161,7 @@ img {
     font-size: 1.15rem;
     color: var(--ink);
     margin-top: -0.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     max-width: 700px;
     line-height: 1.6;
 }
@@ -138,7 +179,7 @@ img {
 .placeholder-box {
     background-color: var(--blue-light);
     width: 100%;
-    aspect-ratio: 2 / 2.8;
+    aspect-ratio: 1 / 0.8;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -173,7 +214,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Keeps image edges neat on hover */
+    overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -345,7 +386,7 @@ img {
     flex: 1;
 }
 
-/* News & Resources Page */
+/* Resources Page */
 
 .news-row {
     display: flex;
@@ -418,6 +459,24 @@ img {
 }
 
 /* Shop */
+/* Shop Section Styles */
+
+/* Align shop grid items naturally without forcing shifts */
+.card-grid.shop-grid {
+    align-items: start;
+}
+
+/* Customisation Station Container */
+.customization-station-wrapper {
+    background-color: var(--pink);
+    border-radius: 10px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
 
 .placeholder-box-shop {
     background-color: var(--blue-light);
@@ -427,10 +486,52 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Anchor for absolute arrows & dots */
-    overflow: hidden;  /* Keeps sliding/fading images neatly inside */
+    position: relative;
+    overflow: hidden;
 }
 
+.placeholder-box-shop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-box-shop .placeholder-label {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: #9bc6db;
+}
+
+.station-heading {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--pink-text);
+    text-align: center;
+}
+
+/* Bottom Description Text */
+.station-description {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: var(--ink);
+    text-align: center;
+    opacity: 0.9;
+    padding: 0 0.25rem;
+}
+
+/* Inner 3D Container Card */
+.station-card {
+    background-color: var(--white);
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 6px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
 
 /* Inner Carousel Styling */
 .carousel-track {

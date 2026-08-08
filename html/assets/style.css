@@ -214,7 +214,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Keeps image edges neat on hover */
+    overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
